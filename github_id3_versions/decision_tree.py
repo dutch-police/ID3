@@ -163,9 +163,9 @@ class DecisionTree(object):
 
 
 def test():
-	f = open('playtennis.csv')
+	f = open('editor.csv')
 	attributes = f.readline().split(',')
-	attributes = attributes[1:len(attributes)-1]
+	attributes = attributes[0:len(attributes)-1]
 	print(attributes)
 	sample = f.readlines()
 	f.close()
